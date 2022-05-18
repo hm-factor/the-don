@@ -3,7 +3,6 @@ import Layout from '../components/layout'
 
 import '../styles/global.css'
 
-// markup
 const IndexPage = () => {
   return (
     <main>

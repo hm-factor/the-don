@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react"
-// import type { PageProps } from "gatsby"
+import Navbar from '../components/navbar';
 
 interface LayoutProps {
     children: ReactNode
@@ -9,7 +9,7 @@ export default function Layout({children}:LayoutProps) {
 
     return (
         <div className="layout">
-            <div>navbar</div>
+            <Navbar/>
             <div className="content">
                 {children}
             </div>
