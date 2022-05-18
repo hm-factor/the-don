@@ -3,11 +3,11 @@ import Layout from '../components/layout'
 
 import '../styles/global.css'
 
-export default function HomePage() {
+export default function Index() {
   return (
       <Layout>
         <div>
-          the don
+          coming soon...
         </div>
       </Layout>
   )
