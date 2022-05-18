@@ -6,9 +6,9 @@ export default function Navbar() {
 
     return(
         <nav className={navbarStyles.navbar}>
-            <Link to="/music">music</Link>
-            <Link to="/shows">shows</Link>
-            <Link to="/contact">contact</Link>
+            <Link to="/music" activeClassName={navbarStyles.active}>music</Link>
+            <Link to="/shows" activeClassName={navbarStyles.active}>shows</Link>
+            <Link to="/contact" activeClassName={navbarStyles.active}>contact</Link>
         </nav>
     )
 }
