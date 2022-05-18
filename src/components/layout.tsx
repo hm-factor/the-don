@@ -11,7 +11,7 @@ export default function Layout({children}:LayoutProps) {
 
     return (
         <div className={layoutStyles.container}>
-            <Link to="/">
+            <Link to="/" className={layoutStyles.header}>
                 THE DON
             </Link >
             <div className="content">

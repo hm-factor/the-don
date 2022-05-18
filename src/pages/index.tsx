@@ -5,10 +5,10 @@ import '../styles/global.css'
 
 export default function Index() {
   return (
-      <Layout>
-        <div>
-          coming soon...
-        </div>
-      </Layout>
+    <Layout>
+      <div>
+        coming soon...
+      </div>
+    </Layout>
   )
 }
