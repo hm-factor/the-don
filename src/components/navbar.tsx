@@ -1,14 +1,21 @@
 import React from "react"
-import { Link } from "gatsby"
-import * as navbarStyles from '../styles/navbar.module.css'
+import NavElement from "./navElement"
+import {navbar} from '../styles/navbar.module.css'
 
 export default function Navbar() {
+    let navElements = [
+        ['/music', 'MUSIC'],
+        ['/shows', 'SHOWS'],
+        ['/contact', 'CONTACT']
+    ]
 
     return(
-        <nav className={navbarStyles.navbar}>
-            <Link to="/music" activeClassName={navbarStyles.active}>music</Link>
-            <Link to="/shows" activeClassName={navbarStyles.active}>shows</Link>
-            <Link to="/contact" activeClassName={navbarStyles.active}>contact</Link>
+        <nav className={navbar}>
+            {navElements.map( (el) => {
+                return (
+                    <NavElement url={el[0]} content={el[1]}/>
+                )
+            })}
         </nav>
     )
 }
